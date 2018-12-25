@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="My Suite"  parallel="methods" thread-count="2">
+    <test name="test1">
+        <groups>
+            <run>
+                <include name="simpleTest"/>
+                <include name="trigonometricTest"/>
+                <exclude name="exceptionTest"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="tests.DivCalTest"/>
+            <class name="tests.SqrtCalTest"/>
+            <class name="tests.SumDCalcTest"/>
+            <class name="tests.SumLCalTest"/>
+            <class name="tests.CosCalTest"/>
+            <class name="tests.CtgCalTest"/>
+            <class name="tests.IsNegativeCalcTest"/>
+            <class name="tests.IsPositiveCalTest"/>
+            <class name="tests.MultDCalTest"/>
+            <class name="tests.MultLCalTest"/>
+            <class name="tests.PowCalTest"/>
+            <class name="tests.SinCalcTest"/>
+            <class name="tests.TgCalTest"/>
+            <class name="tests.SubDCalTest"/>
+            <class name="tests.SubLCalTest"/>
+        </classes>
+    </test>
+</suite>
